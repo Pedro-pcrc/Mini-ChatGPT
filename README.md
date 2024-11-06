@@ -4,14 +4,14 @@ Projeto de IA
 import os
 from groq import Groq
 
-# Defina a chave da API diretamente no código ou garanta que ela esteja configurada corretamente no ambiente
+ Defina a chave da API diretamente no código ou garanta que ela esteja configurada corretamente no ambiente
 os.environ["GROQ_API_KEY"] = "Digite aqui a sua chave de API"
 
 client Groq(
      api_key=os.environ.get("GROQ_API_KEY"),
 )
 
-# Inicializa a lista de mensagens para manter o contexto da conversa
+ Inicializa a lista de mensagens para manter o contexto da conversa
 messages = []
 
 while True:
